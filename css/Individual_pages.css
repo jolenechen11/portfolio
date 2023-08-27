@@ -1,0 +1,165 @@
+/* -------- COLORS -------- */
+/*#a1172a - red */
+/* #eff3f6 - background
+#ffffff - white 
+#2a2728 - black 
+1pt - borders for white boxes  */
+
+
+/* ------ FONTS ------ */
+
+@font-face {
+    font-family: futura;
+    src: url("/Users/alexvargas/Desktop/Websites/Jolene's Portfolio 2/Assets/Fonts/futura/futura medium bt.ttf") format('truetype');
+}
+
+/* ------ STYLE STARTS HERE ------ */
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: futura;
+    /* border: 1px red solid; */
+}
+
+a{
+    text-decoration: none;
+    color: #2a2728;
+}
+
+a:hover{
+    color: #a1172a;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    background-color: #eff3f6;
+    display: flex;
+
+}
+
+li{
+    text-align: left;
+
+    list-style: none;
+}
+
+/* ----- SIDEBAR ------ */
+
+#sidebar{
+    display: flex;
+    position: relative;
+    width: 10%;
+    flex-direction: column;
+
+}
+
+#sidebar img{
+    width: 100%;
+}
+
+#sidebar li{
+    margin: 2em 1em;
+    font-size: smaller;
+}
+
+#smol-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+#smol-logos img{
+    width: 25%;
+    height: auto;
+}
+
+/* ------ SIDEBAR RIGHT ------ */
+
+#sidebar-right{
+    display: flex;
+    position: relative;
+    width: 10%;
+    flex-direction: column;
+
+    top: .6em;
+}
+
+#sidebar-right img{
+    margin: .5em 0;
+    width: 85%;
+}
+
+#sidebar-right li{
+    margin: 2em 0;
+}
+
+/* ----- BOXES ------ */
+
+#big-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    position: relative;
+    width: 80%;
+    height: 100%;
+
+    margin-left: .5em;
+
+}
+
+
+
+#top-row{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    margin: 1em 1em;
+    height: 60%;
+}
+
+#bottom-row{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    margin: 1em 1em;
+    height: 27%;
+}
+
+.white-box{
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #2a2728;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    text-align: center;
+
+    height: 30%;
+}
+
+.black-box{
+    position: relative;
+    background-color: #2a2728;
+}
+
+/* ------ INSIDE WHITE BOXES ------- */
+
+.white-box p{
+    text-align: center;
+}
+
+.white-box img{
+    width: 80%;
+    border-radius: .4em;
+}
